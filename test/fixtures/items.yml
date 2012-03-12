@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Admin: MyString
+  title: MyString
+  description: MyText
+  image_url: MyString
+  price: 9.99
+  date_available: 2012-03-12
+
+two:
+  Admin: MyString
+  title: MyString
+  description: MyText
+  image_url: MyString
+  price: 9.99
+  date_available: 2012-03-12
