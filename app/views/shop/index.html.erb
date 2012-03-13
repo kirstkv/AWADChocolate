@@ -1,5 +1,3 @@
-<h1>Listing items</h1>
-
 <table width="100%">
   <% oddev=0
   for item in @items
@@ -26,21 +24,14 @@
         <% end %>
         <p>  <p>
         </td></tr>
-        <tr><td>&pound;<%= item.price %></td></tr>
-        <tr><td>Available <%= item.date_available.strftime("%d/%m/%y") %></td></tr>
+        <tr><td><h3>&pound;<%= item.price %></h3></td></tr>
       </table>
     </td>
     <td>
       <table class="ListActions">
         <tr><td><%= link_to 'Show', item %></td></tr>
-        <tr><td><%= link_to 'Edit', edit_item_path(item) %></td></tr>
-        <tr><td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td></tr>
-      </table> 
+        <tr><td><%= button_to "Add to Cart", :action => :add_to_cart, :id => product %></td></tr>
     </td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Item', new_item_path %>

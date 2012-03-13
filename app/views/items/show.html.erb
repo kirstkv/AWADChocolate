@@ -1,9 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Admin:</b>
-  <%= @item.Admin %>
-</p>
 
 <p>
   <b>Title:</b>
@@ -17,17 +13,17 @@
 
 <p>
   <b>Image url:</b>
-  <%= @item.image_url %>
+  <img src="<%= @item.image_url %>" alt="<%= @item.title %>" width="200" /> 
 </p>
 
 <p>
   <b>Price:</b>
-  <%= @item.price %>
+  &pound;<%= @item.price %>
 </p>
 
 <p>
   <b>Date available:</b>
-  <%= @item.date_available %>
+  <%= @item.date_available.strftime("%d/%m/%y") %>
 </p>
 
 

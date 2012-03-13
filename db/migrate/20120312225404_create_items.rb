@@ -1,7 +1,6 @@
 class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
-      t.string :Admin
       t.string :title
       t.text :description
       t.string :image_url
