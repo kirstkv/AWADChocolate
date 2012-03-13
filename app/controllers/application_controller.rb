@@ -1,3 +1,4 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+    require_dependency 'cart' 
+    require_dependency 'line_item'
 end

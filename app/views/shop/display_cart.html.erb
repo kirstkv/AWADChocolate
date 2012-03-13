@@ -1,0 +1,18 @@
+<h1>Display cart </h1>
+<p> Contains <%=@things.size %> items </p>
+<table>
+<% for thing in @things
+#item=thing.(@item_id)
+-%>
+  <tr>
+    <td><%= thing.title
+    %></td>
+    <td><%= #@item.title
+    %></td>
+    <td><%= thing.price
+    %> </td>
+    <td><%= #thing.quantity*thing.unit_price
+    %></td>
+  </tr>
+<% end -%>
+</table>
